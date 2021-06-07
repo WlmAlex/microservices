@@ -1,0 +1,26 @@
+
+
+# spring
+server:
+  port: 8082
+  error:
+    include-message: always
+    include-binding-errors: always
+#axon
+axon:
+  axonserver:
+    servers: axon-server
+# mongodb
+spring:
+  data:
+    mongodb:
+      host: mongo-container
+      port: 27017
+      database: user
+
+# Security
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-value: signing-key

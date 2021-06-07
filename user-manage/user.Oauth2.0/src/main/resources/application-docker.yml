@@ -1,0 +1,22 @@
+# server
+server:
+  port: 8084
+
+
+# mongodb
+spring:
+  data:
+    mongodb:
+      host: mongo-container
+      port: 27017
+      database: user
+
+#security
+security:
+  oauth2:
+    client:
+      client-id: springbankClient
+      client-secret: springbankSecret
+      client-signing-key: signing-key
+      token-validity-seconds: 300
+      refresh-token-validity-seconds: 1500

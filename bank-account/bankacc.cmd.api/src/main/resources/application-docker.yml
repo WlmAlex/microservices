@@ -1,0 +1,23 @@
+
+#port
+server:
+  port: 9091
+
+# axon-server
+axon:
+  axonserver:
+    servers: axon-server
+# mongodb
+spring:
+  data:
+    mongodb:
+      host: mongo-container
+      port: 27017
+      database: bank
+
+# security
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-value: signing-key
